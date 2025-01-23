@@ -1,0 +1,4 @@
+target/
+*.pem
+src/main/resources/truststore
+src/main/resources/

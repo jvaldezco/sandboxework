@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">C1POC_DesktopApp_Login</th></tr>
+<tr><td><a href="#t0">C1POC_DesktopApp_Login</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">57</td><td></td><td></td></tr>
+<tr><th colspan="8">Default Suite</th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">C1POC_DesktopApp_Login</th></tr></tbody><tbody id="t0"><tr><th colspan="4">C1POC_DesktopApp_Login &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">c1ework.Tests.DesktopApp.C1DA01_TS01_Login</td><td><a href="#m0">finalizeTest</a></td><td rowspan="1">1737640637003</td><td rowspan="1">1</td></tr><tr><th colspan="4">C1POC_DesktopApp_Login &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">c1ework.Tests.DesktopApp.C1DA01_TS01_Login</td><td><a href="#m1">DA_LOGIN</a></td><td rowspan="1">1737640636997</td><td rowspan="1">4</td></tr></tbody>
+<tbody><tr><th colspan="4">Default Suite</th></tr></tbody></table>
+<h2>C1POC_DesktopApp_Login</h2><h3 id="m0">c1ework.Tests.DesktopApp.C1DA01_TS01_Login#finalizeTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;ework.utils.ConfigFile.isProxyMode()&quot; because &quot;ework.utils.TestDriver.config&quot; is null
+	at ework.utils.TestDriver.finalizeTest(TestDriver.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">c1ework.Tests.DesktopApp.C1DA01_TS01_Login#DA_LOGIN</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;ework.utils.RunLogger.logUpdateScenario()&quot; because &quot;c1ework.Tests.DesktopApp.C1DA01_TS01_Login.logger&quot; is null
+	at c1ework.Tests.DesktopApp.C1DA01_TS01_Login.DA_LOGIN(C1DA01_TS01_Login.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

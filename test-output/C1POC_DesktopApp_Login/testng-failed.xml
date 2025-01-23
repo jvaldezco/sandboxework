@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [C1POC_DesktopApp_Login]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="win-app"/>
+  <parameter name="module" value="C1POC_DA"/>
+  <parameter name="url" value="https://qa.cambridgeone.org/"/>
+  <test thread-count="1" parallel="tests" name="C1POC_DesktopApp_Login(failed)">
+    <classes>
+      <class name="c1ework.Tests.DesktopApp.C1DA01_TS01_Login">
+        <methods>
+          <include name="setupSuite"/>
+          <include name="setupTest"/>
+          <include name="DA_LOGIN"/>
+          <include name="finalizeTest"/>
+        </methods>
+      </class> <!-- c1ework.Tests.DesktopApp.C1DA01_TS01_Login -->
+    </classes>
+  </test> <!-- C1POC_DesktopApp_Login(failed) -->
+</suite> <!-- Failed suite [C1POC_DesktopApp_Login] -->

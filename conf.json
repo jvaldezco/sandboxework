@@ -1,0 +1,26 @@
+{
+    "codespace" : true,
+
+    "desktop_app_path": "C:\\Users\\jvaldezco\\AppData\\Local\\Programs\\CambridgeOne\\Cambridge One Desktop App.exe",
+    "chrome_driver_da_exe": "chromedriver_da.exe",
+    "debugtron_port": "56287",
+
+    "run_official": true,
+    "release_label": "C-ONE.49.0.0_prod",
+
+    "run_tags": "DEV",
+
+    "stream_label": "Blue",
+    "run_label": "<b><font color='Blue'>[C-ONE.49.0.0]</font></b> SMK eReader | <b>PD</b>",
+
+    "environment": "AP",
+    "platform": "EC1",
+    "start_url": "https://qa.cambridgeone.org/",
+        
+    "front_end": true,
+    "back_end" : false,
+
+    "pageload_timeout": 180,
+    "implicit_wait": 1
+
+}
