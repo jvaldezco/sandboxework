@@ -9,7 +9,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import ework.utils.TestDriver;
 
-public class WebDriverWindowsDesktopApp extends EworkDriver {
+public class WebDriverWindowsDesktopApp_v2 extends EworkDriver {
 	//private WebDriver driver;
 	
 	@Override
@@ -19,8 +19,8 @@ public class WebDriverWindowsDesktopApp extends EworkDriver {
 		System.out.println("PORT: " + port);
 		
 		if (port != null && !port.isEmpty()) {
-			System.out.println(TestDriver.config.getDriverPath() + TestDriver.config.getChromeDriver_da());
-			System.setProperty("webdriver.chrome.driver", TestDriver.config.getDriverPath() + TestDriver.config.getChromeDriver_da());
+			System.out.println(TestDriver.config.getChromeDriver_da());
+			System.setProperty("webdriver.chrome.driver", TestDriver.config.getChromeDriver_da());
 			
 			ChromeOptions opt = new ChromeOptions();
 			opt.addArguments("--remote-allow-origins=*");

@@ -8,7 +8,7 @@ import c1ework.PageActions.DesktopApp.*;
 import c1ework.PageVerifications.DesktopApp.DesktopAppDashboardVerifications;
 import ework.utils.TestDriver;
 
-public class C1DA01_TS01_Login extends TestDriver {
+public class C1POC_DesktopApp_Login extends TestDriver {
 
 	String 
 	username,
