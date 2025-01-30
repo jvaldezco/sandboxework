@@ -1,26 +1,31 @@
 {
-    "codespace" : true,
+    "codespace" : false,
 
-    "desktop_app_path": "C:\\Users\\jvaldezco\\AppData\\Local\\Programs\\CambridgeOne\\Cambridge One Desktop App.exe",
-    "chrome_driver_da_exe": "chromedriver_da.exe",
-    "debugtron_port": "56287",
+	"desktop_app_path": "C:\\Users\\jvaldezco\\AppData\\Local\\Programs\\CambridgeOne\\Cambridge One Desktop App.exe",
+    "chrome_driver_da_exe": "chromedriver_v132.exe",
+    "debugtron_port": "55591",
 
     "run_official": true,
-    "release_label": "C-ONE.49.0.0_prod",
+    "release_label": "WinDA_POC",
+    "data_tag": "test",
 
     "run_tags": "DEV",
-
     "stream_label": "Blue",
-    "run_label": "<b><font color='Blue'>[C-ONE.49.0.0]</font></b> SMK eReader | <b>PD</b>",
+    "run_label": "[POC] WIndows Desktop App Test Run",
 
-    "environment": "AP",
+    "environment": "QA",
     "platform": "EC1",
     "start_url": "https://qa.cambridgeone.org/",
         
     "front_end": true,
     "back_end" : false,
+    "lambdatest_mode": false,
+    "appium_mode": false,
+    "grid_mode": false,
+    "incognito": false,
 
     "pageload_timeout": 180,
-    "implicit_wait": 1
+    "implicit_wait": 1,
 
+    "proxy_mode" : false
 }

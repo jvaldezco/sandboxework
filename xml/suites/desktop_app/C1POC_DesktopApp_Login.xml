@@ -8,7 +8,7 @@
   
   <test name="C1POC_DesktopApp_Login" preserve-order="true" enabled="true">
     <classes>
-       <class name="src.test.java.c1ework.Tests.DesktopApp.C1DA01_TS01_Login">
+       <class name="c1ework.Tests.DesktopApp.C1DA01_TS01_Login">
        		<methods>
 	      		<include name="DA_LOGIN"/>
        		</methods>

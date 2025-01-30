@@ -106,13 +106,15 @@ public class TestDriver {
 				}
 				
 				System.out.println("Executing tests for " + module + "...");
+				System.out.println("Browser: " + browser);
 				System.out.println(TestDriver.url);
 				
 				this.edriver = EworkDriverFactory.get(browser.toUpperCase(), TestDriver.config.isLambdaTestMode());
 				driver = this.edriver.initWebDriver();
+			
 				
-				driver.manage().window().maximize();
-				GenericBrowserActions.navigateToURL(driver, TestDriver.url);
+				// driver.manage().window().maximize();
+				// GenericBrowserActions.navigateToURL(driver, TestDriver.url);
 			}
 			
 			if(TestDriver.config.getEnvironment().equalsIgnoreCase("CN")) {

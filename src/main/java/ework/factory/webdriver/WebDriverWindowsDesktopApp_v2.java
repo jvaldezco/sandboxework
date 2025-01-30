@@ -3,6 +3,7 @@ package ework.factory.webdriver;
 import java.net.URL;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -10,7 +11,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import ework.utils.TestDriver;
 
 public class WebDriverWindowsDesktopApp_v2 extends EworkDriver {
-	//private WebDriver driver;
+	private WebDriver driver;
 	
 	@Override
 	public WebDriver initWebDriver() throws Exception {
@@ -25,19 +26,16 @@ public class WebDriverWindowsDesktopApp_v2 extends EworkDriver {
 			ChromeOptions opt = new ChromeOptions();
 			opt.addArguments("--remote-allow-origins=*");
 			
-			// Ensure the path to the Chrome binary is correct
 			String chromeBinaryPath = TestDriver.config.getDesktopAppPath();
 			opt.setBinary(chromeBinaryPath);
+			opt.setExperimentalOption("debuggerAddress","127.0.0.1:" + port);
 			
-			opt.setExperimentalOption("debuggerAddress", "localhost:" + port);
-			
-			URL remoteWebDriverUrl = new URL("http://localhost:" + port);
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 			capabilities.setCapability(ChromeOptions.CAPABILITY, opt);
 			
-			// Initialize the RemoteWebDriver with the capabilities
-			WebDriver driver = new RemoteWebDriver(remoteWebDriverUrl, capabilities);
+			driver = new ChromeDriver(opt);
 			return driver;
+
 		} else {
 			throw new Exception("Debugtron port is not set in the configuration file.");
 		}

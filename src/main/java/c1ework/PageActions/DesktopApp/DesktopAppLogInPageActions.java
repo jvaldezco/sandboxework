@@ -1,6 +1,5 @@
 package c1ework.PageActions.DesktopApp;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 import c1ework.PageObjects.DesktopApp.DesktopAppLogInPage;
 import ework.genericactions.GenericJSActions;
@@ -11,9 +10,10 @@ public class DesktopAppLogInPageActions {
 
 	public static void click_logInWebBrowser_btn(WebDriver driver, RunLogger logger) throws Exception {
 		try {
-			logger.setStepDesc("Click Log In Submit form");
-			logger.setExpectedResult("\"LOG IN\" button is clicked");
+			logger.setStepDesc("Verify that login button is able click");
+			logger.setExpectedResult("Login button should be clickable");
             
+			GenericPageWaits.waitElementVisible(driver, DesktopAppLogInPage.getLogiInWithWebBrowser_btn);
 			GenericJSActions.scrollIntoView(driver, DesktopAppLogInPage.getLogiInWithWebBrowser_btn(driver));
 			GenericJSActions.jsElementClick(driver, DesktopAppLogInPage.getLogiInWithWebBrowser_btn(driver));
             GenericPageWaits.delay();
